@@ -11,6 +11,9 @@ main {
     flex-grow: 1;
 }
 .main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 position: fixed;
 width: 600px;
 height: 100dvh;
@@ -66,13 +69,17 @@ body.open .burger-btn span:nth-child(2) {
     }
 
 .navigation {
+
     margin-top: 80px;
     margin-left: 28px;
     padding: 0;
 }
 .navigation-link {
     list-style-type: none;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+}
+.navigation-link a:hover {
+    color: #0EC261;
 }
 .navigation-link a {
 text-transform: uppercase;
@@ -81,7 +88,26 @@ font-weight: 500;
 font-size: 22px;
 line-height: 26px;
 color: #FFFFFF;
+}
+.language {
+font-weight: 700;
+font-size: 13px;
+line-height: 15px;
+color: #0EC261;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin-bottom: 28px;
+margin-left: 28px;
 
+
+}
+.social {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 38px;
+}
+.social-link {
+    padding-left: 28px;
 }
 .name {
 margin: 16px 16px 8px;
@@ -115,6 +141,7 @@ line-height: 100%;
 color: #121212;
 margin-left: 16px;
 margin-bottom: 6px;
+
 }
 .hero span {
 font-weight: 700;
