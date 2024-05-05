@@ -69,9 +69,7 @@ body.open .burger-btn span:nth-child(2) {
     transform: translateY(0) rotate(-45deg);
     border: 2px solid white;
     }
-
 .navigation {
-
     margin-top: 80px;
     margin-left: 28px;
     padding: 0;
@@ -99,8 +97,6 @@ color: #0EC261;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 margin-bottom: 28px;
 margin-left: 28px;
-
-
 }
 .social {
     display: flex;
@@ -127,6 +123,12 @@ vertical-align: middle;
 margin: auto 0;
 margin-left: 7px;
 }
+.language2 {
+    display: none;
+}
+.geo2 {
+    display: none;
+}
 .geo {
 width: 93.5px;
 height: 18.33px;
@@ -136,14 +138,12 @@ display: flex;
 align-self: flex-end;
 margin-right: 16px;
 }
-
 .hero h2 {
 font-size: 32px;
 line-height: 100%;
 color: #121212;
 margin-left: 16px;
 margin-bottom: 6px;
-
 }
 .hero span {
 font-weight: 700;
@@ -161,18 +161,14 @@ margin-top: 16px;
 margin-bottom: 32px;
 }
 .button-0 {
-
 width: 100%;
 height: 50px;
 left: 0px;
 top: 273px;
-
 font-size: 18px;
 line-height: 21px;
 text-align: center;
-
 color: #FFFFFF;
-
 background: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
 background-blend-mode: darken;
 border: none;
@@ -251,5 +247,97 @@ align-self: flex-end;
     .social {
         margin-left: 114px;
     }
-
+.main-footer {
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+.phone {
+    order: 1;
+    margin: 0;
+align-self: flex-end;
+margin: 0 36px 16px;
+color: #121212;
+}
+.copyright {
+    color: gray;
+    margin-left: 117px;
+align-self: flex-end;
+}
+.name {
+    margin-left: 68px;
+    margin-top: 32px;
+    flex-grow: 1;
+text-align: start;
+}
+.geo {
+   display: none;
+}
+.geo2 {
+    width: 93.5px;
+height: 18.33px;
+left: 210px;
+top: 60px;
+display: flex;
+align-self: flex-end;
+margin-right: 16px;
+margin-bottom: 16px;
+}
+.hero {
+    margin-left: 118px;
+ margin-top: 163px;
+}
+.hero h2 {
+    margin: 0;
+font-weight: 700;
+font-size: 70px;
+line-height: 100%;
+}
+.hero span {
+font-weight: 700;
+font-size: 70px;
+line-height: 66px;
+margin: 0;
+}
+.hero p {
+font-size: 26px;
+line-height: 30px;
+margin: 0;
+margin-top: 36px;
+}
+.button-0 {
+margin-top: 60px;
+width: 250px;
+height: 48px;
+left: 118px;
+top: 489px;
+border-radius: 7px;
+}
+.language2 {
+display: block;
+margin-left: 28px;
+margin-bottom: 30px;
+font-size: 13px;
+line-height: 15px;
+color: #0EC261;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+body.open .language2 {
+    display: none;
+}
+.header-nav {
+    margin-left: 10px;
+}
+.navigation-link a {
+font-weight: 500;
+font-size: 28px;
+line-height: 33px;
+}
+.main-header {
+    justify-content: center;
+}
+.social {
+    margin-left: 87px;
+}
 }
