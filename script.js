@@ -9,3 +9,4 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector("body").classList.toggle("open")
     })
     })
+

@@ -10,6 +10,10 @@ main {
     flex-direction: column;
     flex-grow: 1;
 }
+.main-dextop {
+    display: flex;
+    flex-direction: column;
+}
 .main-header {
     display: flex;
     flex-direction: column;
@@ -339,5 +343,70 @@ line-height: 33px;
 }
 .social {
     margin-left: 87px;
+}
+}
+@media (min-width: 1024px) {
+
+    .sliders .slider {
+        display: flex;
+        position: relataive;
+        width: 688px;
+        height: 811px;
+        margin: 0 auto;
+        flex-direction: column;
+        object-fit: cover;
+        margin-left: 98px;
+    }
+    main {
+        flex-direction: row;
+    }
+    .slider-list {
+        position: relative;
+    }
+    .slider {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
+.slider h2 {
+margin-top: 237px;
+font-size: 32px;
+line-height: 38px;
+color: #FFFFFF;
+}
+.slider p {
+font-size: 22px;
+line-height: 100%;
+color: #EEEEEE;
+}
+.button-1 {
+background: linear-gradient(90deg, #13493F 0%, #0C7B1B 100%);
+border-radius: 4px;
+width: 164px;
+height: 48px;
+left: 0px;
+top: 273px;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+color: #FFFFFF;
+background-blend-mode: darken;
+border: none;
+}
+
+.slider:nth-child(2) {
+    background-image: url(img/car2.jpg);
+
+}
+.slider:nth-child(3) {
+    background-image: url(img/car3.jpg);
+}
+.slider:nth-child(4) {
+    background-image: url(img/car4.jpg);
+}
+.slider:first-child {
+    background-image: url(img/car1.jpg);
+    
 }
 }
