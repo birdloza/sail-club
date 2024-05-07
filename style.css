@@ -13,6 +13,8 @@ main {
 .main-dextop {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+
 }
 .main-header {
     display: flex;
@@ -110,6 +112,9 @@ margin-left: 28px;
 }
 .social-link {
     padding-left: 28px;
+}
+.copy-footer {
+    display: none;
 }
 .name {
 margin: 16px 16px 8px;
@@ -346,28 +351,38 @@ line-height: 33px;
 }
 }
 @media (min-width: 1024px) {
-
-    .sliders .slider {
-        display: flex;
-        position: relataive;
-        width: 688px;
-        height: 811px;
-        margin: 0 auto;
-        flex-direction: column;
-        object-fit: cover;
-        margin-left: 98px;
+    .slider {
+        display: none;
     }
     main {
         flex-direction: row;
+        justify-content: space-between;
     }
-    .slider-list {
+    .sliders {
+        width: 410px;
+        height: 100dvh;
         position: relative;
-    }
-    .slider {
-        position: absolute;
         overflow: hidden;
-        top: 0;
-        left: 0;
+        background-color: #039F67;
+
+
+    }
+    .sliders .prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        left: 10px;
+    }
+    .sliders .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        right: 10px;
+    }
+    .slider.active {
+        opacity: 1;
     }
 .slider h2 {
 margin-top: 237px;
@@ -408,5 +423,35 @@ border: none;
 .slider:first-child {
     background-image: url(img/car1.jpg);
     
+}
+.hero {
+    margin-right: 36px;
+}
+.main-footer {
+    display: none;
+}
+.copy-footer {
+display: flex;
+justify-content: space-between;
+margin-bottom: 22px;
+flex-shrink: 0;
+}
+.phone {
+    order: 1;
+    margin: 0;
+align-self: flex-end;
+margin: 0 36px 16px;
+color: #121212;
+}
+.copyright {
+    color: gray;
+    margin-left: 117px;
+align-self: flex-end;
+}
+.main-dextop {
+    justify-content: space-between;
+}
+.hero {
+    margin-top: 0;
 }
 }
