@@ -216,6 +216,12 @@ align-self: flex-end;
     background-color: #151B1F;
     height: 100dvh;
 }
+.burger-btn1 {
+    width: 40px;
+    height: 40px;
+    margin: 16px;
+    padding: 5px;
+}
 .burger-btn1 span {
     display: block;
     position: absolute;
@@ -352,37 +358,62 @@ line-height: 33px;
 }
 @media (min-width: 1024px) {
     .slider {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        padding: 64px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease;
     }
     main {
         flex-direction: row;
         justify-content: space-between;
     }
     .sliders {
+        display: flex;
+        justify-content: space-between;
         width: 410px;
         height: 100dvh;
         position: relative;
         overflow: hidden;
         background-color: #039F67;
-
-
+        flex-grow: 1;
     }
-    .sliders .prev {
+    .sliders .prev-left {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         z-index: 1;
-        left: 10px;
+        left: 10px; 
     }
-    .sliders .next {
+    .sliders .next-right {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         z-index: 1;
         right: 10px;
     }
-    .slider.active {
-        opacity: 1;
+    .prev,
+    .next {
+width: 32px;
+height: 100dvh;
+z-index: 2;
+background: none;
+border: none;
+}
+
+.prev:hover,
+.next:hover {
+    
+background: #0ec26231;
+
+}
+.slider.active {
+    opacity: 1;
     }
 .slider h2 {
 margin-top: 237px;
@@ -411,18 +442,16 @@ border: none;
 }
 
 .slider:nth-child(2) {
-    background-image: url(img/car2.jpg);
-
+    background: url(img/car2.jpg) no-repeat 50% 50% / cover;
 }
 .slider:nth-child(3) {
-    background-image: url(img/car3.jpg);
+    background: url(img/car3.jpg) no-repeat 50% 50% / cover;
 }
 .slider:nth-child(4) {
-    background-image: url(img/car4.jpg);
+    background: url(img/car4.jpg) no-repeat 50% 50% / cover;
 }
 .slider:first-child {
-    background-image: url(img/car1.jpg);
-    
+    background: url(img/car1.jpg) no-repeat 50% 50% / cover;  
 }
 .hero {
     margin-right: 36px;
@@ -450,6 +479,7 @@ align-self: flex-end;
 }
 .main-dextop {
     justify-content: space-between;
+    flex-grow: 2;
 }
 .hero {
     margin-top: 0;
