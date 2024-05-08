@@ -221,6 +221,7 @@ align-self: flex-end;
     height: 40px;
     margin: 16px;
     padding: 5px;
+    z-index: 6;
 }
 .burger-btn1 span {
     display: block;
@@ -360,7 +361,7 @@ line-height: 33px;
     .slider {
         display: flex;
         flex-direction: column;
-        padding: 64px;
+        /* padding: 64px; */
         width: 100%;
         height: 100%;
         position: absolute;
@@ -368,6 +369,11 @@ line-height: 33px;
         left: 0;
         opacity: 0;
         transition: opacity 0.5s ease;
+        background-size: cover;
+    }
+    .sliderContent {
+        margin-right: 64px ;
+        margin-left: 64px ;
     }
     main {
         flex-direction: row;
@@ -408,9 +414,7 @@ border: none;
 
 .prev:hover,
 .next:hover {
-    
 background: #0ec26231;
-
 }
 .slider.active {
     opacity: 1;
@@ -422,6 +426,8 @@ line-height: 38px;
 color: #FFFFFF;
 }
 .slider p {
+font-family: 'Roboto';
+font-style: normal;
 font-size: 22px;
 line-height: 100%;
 color: #EEEEEE;
@@ -440,7 +446,6 @@ color: #FFFFFF;
 background-blend-mode: darken;
 border: none;
 }
-
 .slider:nth-child(2) {
     background: url(img/car2.jpg) no-repeat 50% 50% / cover;
 }
@@ -483,5 +488,16 @@ align-self: flex-end;
 }
 .hero {
     margin-top: 0;
+}
+.dots {
+    display: none;
+}
+.main-header {
+    width: 130%;
+    left: -130%;
+    z-index: 5; 
+}
+.language {
+    display: none;
 }
 }

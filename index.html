@@ -13,24 +13,27 @@
 </head>
 <body class="">
     <header class="main-header">
-       <nav class="header-nav">
-        <ul class="navigation">
-            <li class="navigation-link"><a href=#>Парковка</a>
-            </li>
-            <li class="navigation-link"><a href=#>Страховка</a>
-            </li>
-            <li class="navigation-link"><a href=#>Бензин</a>
-            </li>
-            <li class="navigation-link"><a href=#>Обслуживание</a>
-            </li>
-        </ul>
-         <ul class="social">
-          <li class="social-link"><a href="#"><img src="img/Telegram_white.svg" alt="Telegram"></a></li>
-          <li class="social-link"><a href="#"><img src="img/Facebook_white.svg" alt="Facebook"></a></li>
-          <li class="social-link"><a href="#"><img src="img/Instagram_white.svg" alt="Instagram"></a></li>
-         </ul>
-       </nav>
-       <div class="language">Eng</div>
+       <div class="header-container">
+           <nav class="header-nav">
+            <ul class="navigation">
+                <li class="navigation-link"><a href=#>Парковка</a>
+                </li>
+                <li class="navigation-link"><a href=#>Страховка</a>
+                </li>
+                <li class="navigation-link"><a href=#>Бензин</a>
+                </li>
+                <li class="navigation-link"><a href=#>Обслуживание</a>
+                </li>
+            </ul>
+             <ul class="social">
+              <li class="social-link"><a href="#"><img src="img/Telegram_white.svg" alt="Telegram"></a></li>
+              <li class="social-link"><a href="#"><img src="img/Facebook_white.svg" alt="Facebook"></a></li>
+              <li class="social-link"><a href="#"><img src="img/Instagram_white.svg" alt="Instagram"></a></li>
+             </ul>
+           </nav>
+           <div class="language">Eng</div>
+       </div>
+       <div class="opacity-container"></div>
         </header>
         <main>
         <div class="main-dextop">
@@ -62,24 +65,24 @@
 <div class="sliders">
 
     <div class="slider active">
-<h2>Бесплатная парковка</h2>
-<p>Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.</p>
-<button type="#" Class="button-1">Подробнее</button>
+<h2 class="sliderContent">Бесплатная парковка</h2>
+<p class="sliderContent">Оставляйте машину на платных городских парковках и разрешенных местах, не нарушая ПДД, а также в аэропортах.</p>
+<button type="#" Class="button-1 sliderContent">Подробнее</button>
     </div>
     <div class="slider">
-<h2>Страховка</h2>
-<p>Полная страховка автомобиля</p>
-<button type="#" Class="button-1">Подробнее</button>
+<h2 class="sliderContent">Страховка</h2>
+<p class="sliderContent">Полная страховка автомобиля</p>
+<button type="#" Class="button-1 sliderContent" style="background: linear-gradient(90deg, #132949 0%, #0C7B67 100%);">Подробнее</button>
     </div>
     <div class="slider">
-<h2>Бензин</h2>
-<p>Полный бак на любой заправке города за наш счёт</p>
-<button type="#" Class="button-1">Подробнее</button>
+<h2 class="sliderContent">Бензин</h2>
+<p class="sliderContent">Полный бак на любой заправке города за наш счёт</p>
+<button type="#" Class="button-1 sliderContent" style="background: linear-gradient(90deg, #493013 0%, #7B0C3B 100%);">Подробнее</button>
     </div>
     <div class="slider">
-<h2>Обслуживание</h2>
-<p>Автомобиль проходит еженедельное ТО</p>
-<button type="#" Class="button-1">Подробнее</button>
+<h2 class="sliderContent">Обслуживание</h2>
+<p class="sliderContent">Автомобиль проходит еженедельное ТО</p>
+<button type="#" Class="button-1 sliderContent" style="background: linear-gradient(90deg, #281349 0%, #720C7B 100%);">Подробнее</button>
     </div>
     <button class="prev">
         <img style='opacity: 1; height: 20px;' class="prev-left" src="img/left.png">
@@ -88,6 +91,12 @@
     <button class="next">
         <img style='opacity: 1; height: 20px;' class="next-right" src="img/right.png">
     </button>
+    <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
 </div>
       </main>    
       <footer role="contentinfo" class="main-footer">
