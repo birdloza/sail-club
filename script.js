@@ -23,7 +23,13 @@ next.onclick = function () {
     } else {
     imageIndex += 1;
 };
+for (let j = 0; j < slider.length; j++) {
+    slider[j].classList.remove('active');
+    dot[j].style.backgroundColor = '#EEEEEE'
+}
+
 slider[imageIndex].classList.add('active');
+dot[imageIndex].style.backgroundColor = '#0EC261';
 };
 prev.onclick = function () {
     slider[imageIndex].classList.remove('active');
@@ -31,6 +37,23 @@ prev.onclick = function () {
         imageIndex = slider.length - 1;
     } else {
         imageIndex -= 1;
-    };
+    }; 
+    for (let j = 0; j < slider.length; j++) {
+        slider[j].classList.remove('active');
+        dot[j].style.backgroundColor = '#EEEEEE'
+    }
     slider[imageIndex].classList.add('active');
+    dot[imageIndex].style.backgroundColor = '#0EC261';
 };
+let dot = document.querySelectorAll('.dot');
+for (let i = 0; i < dot.length; i++) {
+    dot[i].onclick = function() {
+        imageIndex = i;
+        for (let j = 0; j < slider.length; j++) {
+            slider[j].classList.remove('active');
+            dot[j].style.backgroundColor = '#EEEEEE'
+        }
+    slider[i].classList.add('active');
+    dot[i].style.backgroundColor = '#0EC261';
+    }
+}

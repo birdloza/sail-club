@@ -206,6 +206,12 @@ order: 1;
 margin: 0 16px 16px;
 align-self: flex-end;
 }
+.dots {
+    display: none;
+}
+.sliders {
+    display: none;
+}
 @media (min-width: 768px) {
 .sidebar {
     display: flex;
@@ -499,6 +505,27 @@ align-self: flex-end;
 }
 .language {
     display: none;
+}
+.sliders .dots {
+    display: flex;
+    position: absolute;
+    bottom: 37px;
+    justify-content: center;
+    width: 100%;
+}
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #EEEEEE;
+    margin: 0px 8px;
+    z-index: 2;
+}
+.dot:first-child {
+    background-color: #0EC261;
+}
+.dot:hover {
+    cursor: pointer;
 }
 
 }
