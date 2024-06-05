@@ -527,5 +527,44 @@ align-self: flex-end;
 .dot:hover {
     cursor: pointer;
 }
-
+ul.breadcrumb {
+padding: 10px 16px;
+list-style: none;
+background-color: white;
+border-bottom: 1px solid grey;
+border-top: 1px solid grey;
+width: 100%;
+}
+.order-page {
+flex-direction: column;
+justify-content: start;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+}
+ul.breadcrumb li+li:before {
+    padding: 19px;
+    color: white;
+    content: url(img/breadcrumb.svg);
+}
+ul.breadcrumb li a {
+    color: gray;
+    text-decoration: none;
+}
+.position {
+    padding-left: 45px
+}
+}
+ul.breadcrumb li a:hover {
+    color: #0EC261;
+}
+.hero-order-pages {
+    display: flex;
+    flex-direction: column;
+    margin-left: 64px;
+}
+.content-order-page {
+    padding-left: 64px;
+}
 }
