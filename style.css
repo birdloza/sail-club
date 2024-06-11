@@ -555,7 +555,7 @@ ul.breadcrumb li a {
 .position {
     padding-left: 45px
 }
-}
+
 ul.breadcrumb li a:hover {
     color: #0EC261;
 }
@@ -566,5 +566,19 @@ ul.breadcrumb li a:hover {
 }
 .content-order-page {
     padding-left: 64px;
+}
+#userCity,
+#UserPost {
+    border: 0;
+    border-bottom: 1px solid gray;
+    width: 224px;
+}
+select {
+    background: url(img/usercity.svg) no-repeat 100% 50%;
+    appearance: none;
+}
+.userCity {
+    display: block;
+    margin-left: 65px;
 }
 }
