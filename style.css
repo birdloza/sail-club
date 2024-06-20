@@ -596,4 +596,57 @@ body.open img {
 .slider .button-1 {
     margin-bottom: 200px;
 }
+.breadcrumb {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+ 
+}
+
+.breadcrumb-item {
+  display: inline-block;
+  margin-right: 16px;
+  
+}
+.breadcrumb-item:not(:first-child) {
+    margin-left: 16px;
+}
+.breadcrumb-item a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: #0EC261;
+}
+.hero-order-pages {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+
+}
+.order-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.content-order-page {
+    display: flex;
+    flex-direction: column;
+}
+.super-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 128px;
+    padding-right: 64px;
+}
+.burger-btn {
+    height: 10px;
+}
+.name {
+    margin-top: 0;
+    margin-left: 0;
+}
 }
