@@ -600,8 +600,11 @@ body.open img {
   background-color: #f8f9fa;
   border-radius: 4px;
   list-style: none;
-  padding: 0;
- 
+  padding: 8px;
+  border-bottom: 1px solid #999;
+  border-top: 1px solid #999;
+  padding-left: 128px;
+  margin-bottom: 0;
 }
 
 .breadcrumb-item {
@@ -620,13 +623,6 @@ body.open img {
 .breadcrumb-item.active {
   color: #0EC261;
 }
-.hero-order-pages {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #999;
-    border-top: 1px solid #999;
-
-}
 .order-page {
     display: flex;
     flex-direction: column;
@@ -635,12 +631,13 @@ body.open img {
 .content-order-page {
     display: flex;
     flex-direction: column;
+    padding-left: 128px;
+    padding-right: 64px;
 }
 .super-container {
     display: flex;
     flex-direction: column;
-    padding-left: 128px;
-    padding-right: 64px;
+    
 }
 .burger-btn {
     height: 10px;
@@ -648,5 +645,24 @@ body.open img {
 .name {
     margin-top: 0;
     margin-left: 0;
+}
+.container {
+    padding-left: 128px;
+    padding-right: 64px;
+}
+.container-content-order-page {
+    display: flex;
+    justify-content: space-between;
+}
+.order-selector {
+    margin-right: 64px;
+    text-align: end;
+    border-left: 1px solid #999999;
+    height: 100dvh;
+}
+.order-adress {
+    display: flex;
+    gap: 12px;
+    padding-left: 32px;
 }
 }
