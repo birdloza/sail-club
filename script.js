@@ -56,4 +56,10 @@ for (let i = 0; i < dot.length; i++) {
     slider[i].classList.add('active');
     dot[i].style.backgroundColor = '#0EC261';
     }
-}
+};
+let cityList = document.querySelector('.cityList');
+let cityInput = document.getElementById('cityChoiseInput');
+
+cityInput.addEventListener('focus', function() {
+    cityList.style.display = 'block';
+});

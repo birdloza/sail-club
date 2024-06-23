@@ -665,4 +665,29 @@ body.open img {
     gap: 12px;
     padding-left: 32px;
 }
+.userCity {
+    padding-left: 62px;
+}
+.userCityContainer {
+    position: relative;
+}
+.cityList {
+    display: none;
+    position: absolute;
+    left: 125px;
+    top: 0;
+    background-color: #EEEEEE;
+}
+.cityList li {
+    list-style: none;
+    & a {
+        text-decoration: none;  
+        color: #111518;
+
+    }
+    &:hover {
+        background-color: #7c7c7c;
+}
+
+}
 }

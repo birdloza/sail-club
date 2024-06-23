@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script defer src="script.js"></script>
+    <script src="order-script.js"></script>
 </head>
 <body>
     <main class="order-page">
@@ -52,19 +52,27 @@
                   </nav></div>
             <div class="container-content-order-page">
                 <div class="content-order-page">
-                <form>
-                <p class="userCity"> 
-                <label for="userCity">Город</label>
-                <select id="userCity" name="city">
-                    <option value="Uliyanovsk">Ульяновск</option>
-                    <option value="Moscow">Москва</option>
-                    <option value="Samara">Самара</option>
-                    <option value="Kazan">Казань</option>
-                </select>
-                </p>
-    
-                <p class="UserPost"><label for="UserPost">Пункт выдачи</label>
-                <input id="UserPost" type="text" placeholder="Начните вводить пункт...">
+                <div class="userCityContainer">
+  <label class="userCity" for="cityChoiseInput">Город
+    <input type="text" id="cityChoiseInput" placeholder="Search for names..">
+    <ul class="cityList">
+        <li><a href="#">Ульяновск</a></li>
+        <li><a href="#">Москва</a></li>
+      
+        <li><a href="#">Волгоград</a></li>
+        <li><a href="#">Залупинск</a></li>
+      
+        <li><a href="#">Самара</a></li>
+        <li><a href="#">Саратов</a></li>
+        <li><a href="#">Новосибирск</a></li>
+    </ul>
+  </lab>
+</div>
+
+
+    <form><p class="UserPost">Пункт выдачи
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
             </p>
         </form>
         <div class="map-container">
